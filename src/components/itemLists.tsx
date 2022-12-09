@@ -1,7 +1,6 @@
 import {Products} from "@/interfaces/products.interface";
 import FibreItemCard from "@/components/fibre/fibreItemCard";
 import {NextPage} from "next";
-import { ProductJsonLd } from 'next-seo';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -21,27 +20,6 @@ const ItemListGrid: NextPage<ItemListGrid> = ({lists}: ItemListGrid) => (
         >
             {lists.map((list) => (
                 <Grid item xs={1} sm={4} md={4} key={list.id}>
-                    <ProductJsonLd
-                         productName={list.name}
-                         images={[
-                             list.image
-                         ]}
-                         description={list.description}
-                         brand={'AIS'}
-                         offers={[
-                             {
-                                 price: list.price,
-                                 priceCurrency: 'THB',
-                                 priceValidUntil: '2022-12-31',
-                                 itemCondition: 'https://schema.org/UsedCondition',
-                                 availability: 'https://schema.org/InStock',
-                                 url: 'ENTER URL THIS',
-                                 seller: {
-                                     name: 'AIS Fibre phuket',
-                                 },
-                             }
-                         ]}
-                    />
                     <FibreItemCard list={list}/>
                 </Grid>
             ))}
