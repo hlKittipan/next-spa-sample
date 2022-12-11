@@ -11,7 +11,7 @@ export interface ItemCardProps {
     list: Products;
 }
 
-const FibreItemCard: NextPage<ItemCardProps> = ({list}) => (
+const ItemCard: NextPage<ItemCardProps> = ({list}) => (
     <Card sx={{maxWidth: 345}}>
         <CardMedia
             component="img"
@@ -26,9 +26,10 @@ const FibreItemCard: NextPage<ItemCardProps> = ({list}) => (
             <span dangerouslySetInnerHTML={{__html: list?.description}}/>
         </CardContent>
         <CardActions>
-            <Button variant="contained" color="success" size="small" href={`/product/${list.type}`}>สนใจโปรโมชั่นนี้</Button>
+            <Button variant="contained" color="success" size="small" href={'tel:0659945955'}>สนใจโทร 0659945955</Button>
+            <Button variant="contained" color="success" size="small" href={'tel:0659945955'}>สนใจโทร 0635909494</Button>
         </CardActions>
     </Card>
 );
 
-export default FibreItemCard;
+export default ItemCard;
