@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import FibreSection from "@/components/FibreSection";
 import ImageCarouselSection from "@/components/ImageCarouselSection";
 import ResponsiveAppBar from "@/components/layouts/ResponsiveAppBar";
 import AISPlaySection from "@/components/AISPlaySection";
+import SimSection from "@/components/SimSection";
 
 export default function Home() {
     return (
@@ -16,10 +16,11 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <ResponsiveAppBar />
+                <ResponsiveAppBar/>
                 <ImageCarouselSection/>
                 <FibreSection/>
                 <AISPlaySection/>
+                <SimSection/>
             </main>
 
             <footer className={styles.footer}>
@@ -28,5 +29,5 @@ export default function Home() {
                 </div>
             </footer>
         </div>
-    )
+    );
 }

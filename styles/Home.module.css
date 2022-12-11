@@ -128,3 +128,13 @@
     filter: invert(1);
   }
 }
+
+.box_hover_up_6 {
+  border-radius: 14px;
+}
+
+.box_hover_up_6:hover {
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}

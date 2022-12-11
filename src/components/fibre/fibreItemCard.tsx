@@ -14,25 +14,23 @@ export interface ItemCardProps {
 }
 
 const FibreItemCard: NextPage<ItemCardProps> = ({list}) => (
-        <Card sx={{maxWidth: 345}}>
-            <CardMedia
-                component="img"
-                image={list.image}
-                alt={list.name}
-            />
-            <CardHeader
-                title={list.name}
-                sx={{color: '#b2d235'}}
-            />
-            <CardContent>
-                <Typography variant="body2" color="text.secondary">
-                    {list.description}
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <Button size="small">สนใจโปรโมชั่นนี้</Button>
-            </CardActions>
-        </Card>
+    <Card sx={{maxWidth: 345}}>
+        <CardMedia
+            component="img"
+            image={list.image}
+            alt={list.name}
+        />
+        <CardHeader
+            title={list.name}
+            sx={{color: '#b2d235'}}
+        />
+        <CardContent>
+            <span dangerouslySetInnerHTML={{__html: list?.description}}/>
+        </CardContent>
+        <CardActions>
+            <Button size="small">สนใจโปรโมชั่นนี้</Button>
+        </CardActions>
+    </Card>
 );
 
 export default FibreItemCard;

@@ -9,13 +9,13 @@ const ImageCarouselSection: NextPage = () => (
     <section className={styles.container}>
         <Carousel autoPlay={true} infiniteLoop={true} interval={3000} transitionTime={500} stopOnHover={true} showThumbs={false}>
             <div>
-                <Image src="/carousel/1.png" alt="AIS Fibre"/>
+                <Image src="/carousel/1.png" alt="AIS Fibre" width="1080" height="337" layout="responsive"/>
             </div>
             <div>
-                <Image src="/carousel/2.png" alt="AIS Fibre"/>
+                <Image src="/carousel/2.png" alt="AIS Fibre" width="1080" height="337" layout="responsive"/>
             </div>
             <div>
-                <Image src="/carousel/3.png" alt="AIS Fibre"/>
+                <Image src="/carousel/3.png" alt="AIS Fibre" width="1080" height="337" layout="responsive"/>
             </div>
         </Carousel>
     </section>
