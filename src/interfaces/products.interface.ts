@@ -6,3 +6,8 @@ export interface Products {
     image: string;
     type: string;
 }
+
+export interface AllProducts {
+    label: string,
+    data: Products[]
+}

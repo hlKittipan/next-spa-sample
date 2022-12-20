@@ -13,8 +13,8 @@ const ItemListGrid: NextPage<ItemListGrid> = ({lists}: ItemListGrid) => (
         <Grid
             container
             direction="row"
-            justifyContent="center"
-            alignItems="center"
+            justifyContent="left"
+            alignItems="left"
             spacing={{ xs: 1, md: 3 }} columns={{ xs: 1, sm: 8, md: 12 }}
         >
             {lists?.map((list) => (

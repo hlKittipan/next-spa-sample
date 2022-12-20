@@ -12,6 +12,7 @@ const schemaTypeOffers = (offers: Products[]) => {
             seller: {
                 name: 'AIS Fibre phuket',
             },
+            image: offer.image
         }
     ))
 }
