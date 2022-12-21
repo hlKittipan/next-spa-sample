@@ -4,6 +4,14 @@ const nextConfig = {
   swcMinify: true,
   images: {
     unoptimized: true
+  },
+  async rewrites() {
+      return [
+          {
+              source: '/robots.txt',
+              destination: '/api/robots'
+          }
+      ];
   }
 }
 
